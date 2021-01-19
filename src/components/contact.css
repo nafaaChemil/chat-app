@@ -38,6 +38,11 @@ ul, li {
     top: -5px;
 }
 
+.flexPos {
+    display: flex;
+    padding-top: 5px;
+}
+
   /* Status (rounded&colored indicator) */
   .Contact .status .status-online,
   .Contact .status .status-offline {

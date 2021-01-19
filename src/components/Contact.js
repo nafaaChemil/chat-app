@@ -7,7 +7,7 @@ function Contact(){
             <div>
                 <ul className="status">
                     <li className='name'>John Doe</li>
-                    <li>
+                    <li className="flexPos">
                         <span className="status-online"></span>
                         <span className="status-text">online</span>
                         </li>
