@@ -1,22 +1,23 @@
+
 import React from 'react'
 import './contact.css'// Import du contact css
-function Contact(){
+
+function Contact(props){
     return (
         <div className="Contact">
-            <img src="https://randomuser.me/api/portraits/men/57.jpg" alt="photo-avatar" className='avatar' />
-            <div>
-                <ul className="status">
-                    <li className='name'>John Doe</li>
-                    <li className="flexPos">
-                        <span className="status-online"></span>
-                        <span className="status-text">online</span>
-                        </li>
-                </ul>
-            </div>
+        <img className="avatar" src={props.avatar} alt={props.name} />
+        <div>
+          <p className="name">{props.name}</p>
+          <div className="status">
+            <div className={props.online ? "status-online" : "status-offline"} />
+            <p className="status-text">
+              {props.online ? "online" : "status-offline"}
+            </p>
+          </div>
         </div>
+      </div>
     )
 }
-
 
 export default Contact
 
